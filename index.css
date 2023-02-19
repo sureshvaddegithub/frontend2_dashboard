@@ -1,0 +1,147 @@
+html{
+    background-color: black;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+    margin:0;
+}
+body{
+    padding:10px;
+}
+
+nav{
+    padding:15px;
+    border:1px solid gray;
+    border-radius: 5px;
+
+}
+.container{
+    display: flex;
+    margin-top:10px;
+    gap:10px;
+    
+}
+
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.card{
+    border:1px solid gray;
+    border-radius:5px;
+    padding:10px;
+    
+}
+.profile{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+
+.card > ul{
+    padding-left:10px;
+}
+
+.card>img{
+    background-color: white;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    margin-bottom:5px;
+    
+}
+
+
+
+.card ul > li{
+    color:gray;
+}
+
+.links{
+    display:flex;
+    color:gray;
+    margin-top:5px;
+    align-items: center;
+    gap:10px;
+}
+
+.links > img{
+    height:30px;
+}
+
+.table-container{
+    border:1px solid gray;
+    width:75%;
+    border-radius:5px;
+    padding:10px;
+
+}
+
+
+
+table{
+    border:1px solid gray;
+    width:100%;
+    border-radius: 5px;
+    margin-top:5px;
+    border-spacing: 0;
+    color:gray;
+}
+ thead td{
+    border-bottom: 1px solid gray;
+    text-align: start;
+}
+td{
+    padding:8px;
+    border-right:1px solid gray;
+}
+
+tbody td{
+    text-align: center;
+}
+thead td:nth-child(1){
+    width:30px;
+}
+thead td:nth-child(2){
+    width:40px;
+}
+tbody tr td:nth-child(3){
+  text-align: start;
+}
+
+table tr td:nth-child(3){
+    border-right: none;
+}
+
+input{
+    width:0;
+    height:0;
+}
+input + label{
+  display: inline-block;
+ border:1px solid gray;
+ width:16px;
+ height:16px;
+ border-radius:3px;
+ /* background-color: gray; */
+
+}
+
+input:checked + label{
+    background-color: gray;
+}
+
+
+@media (max-width:640px){
+    .container{
+        flex-direction: column;
+    }
+}
